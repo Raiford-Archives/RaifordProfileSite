@@ -11,3 +11,39 @@ publishDir = "../docs"
 tags = ["blog", "responsive", "widgets", "rss", "disqus", "google analytics", "wordpress"]
 features = ["blog", "responsive", "widgets", "rss", "disqus", "wordpress"]
 
+[params]
+  mainSections = ["blog", "docs"]
+
+[frontmatter]
+date = ["date", "publishDate", "lastmod"]
+lastmod = [":git", "lastmod", "date", "publishDate"]
+publishDate = ["publishDate", "date"]
+expiryDate = ["expiryDate"]
+
+  
+[[menu.main]]
+    url = "/"
+    name = "Home"
+    weight = 1
+
+[[menu.main]]
+    url = "/about/"
+    identifier = "about"
+    name = "All About Raiford"
+    weight = 2
+
+
+[[menu.main]]
+    url = "/post/"
+    name = "Posts"
+    weight = 3
+
+[[menu.main]]
+    url = "/project/"
+    name = "Projects"
+    weight = 4
+
+    [[menu.main]]
+    url = "/resume/"
+    name = "Resume"
+    weight = 5
