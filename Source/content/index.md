@@ -1,7 +1,7 @@
 ---
 title: "Home Page"
 date: 2020-01-02T01:03:16-06:00
-draft: true
+draft: false
 saying: "Holly Cow"
 tags : ["warm", "cold", "hot"]
 features : ["higperf", "dynamic"]

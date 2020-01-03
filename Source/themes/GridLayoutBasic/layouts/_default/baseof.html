@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html>
     {{- partial "head.html" . -}}
+    {{- partial "styles.html" . -}}
+
+   
+
+
     <body>
         {{- partial "header.html" . -}}
-        <div id="content">
+        {{- partial "navigator.html" . -}}     
+        {{- partial "leftAside.html" . -}}     
+        {{- partial "rightAside.html" . -}}
+     
+       
+        <main class="pageMain">
         {{- block "main" . }}{{- end }}
-        </div>
-        {{- partial "footer.html" . -}}
+        </main>
+
+        <footer class="pageFooter">Footer</footer>
+       
+ 
     </body>
 </html>
