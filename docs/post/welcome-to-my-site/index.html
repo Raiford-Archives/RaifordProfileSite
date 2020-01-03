@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en-us">
 <head>
-	<meta name="generator" content="Hugo 0.62.0" />
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>My New Hugo Site</title>
+	<title>Basic HTML Elements - My New Hugo Site</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
-	<meta name="description" content="">
+	<meta name="description" content="Example test article that contains basic HTML elements for text formatting on the Web.">
 	
 	
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
-	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="My New Hugo Site">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
 	<link rel="stylesheet" href="/css/style.css">
 	
@@ -35,7 +33,7 @@
 		<span class="menu__btn-title" tabindex="-1">Menu</span>
 	</button>
 	<ul class="menu__list">
-		<li class="menu__item menu__item--active">
+		<li class="menu__item">
 			<a class="menu__link" href="/">
 				
 				<span class="menu__text">Home</span>
@@ -85,20 +83,31 @@
 		<div class="wrapper flex">
 			<div class="primary">
 			
-<main class="main list" role="main">
-
-<h3>INSIDE index.html ni theme layouts</h3>
-	
-		<div class="warning">
-			<svg class="warning__icon icon icon-files" width="96" height="96" viewBox="0 0 384 384"><path d="m368 64h-224-16v16 288 16h16 224 16v-16-288-16zm-16 288h-192v-256h192zm-320-320h192v16h32v-32-16h-16-224-16v16 288 16h16 96v-32h-80zm144 272h160v-32h-160zm0-64h160v-32h-160zm0-64h160v-32h-160zm-128 64h64v-32h-64zm0-64h64v-32h-64zm0-64h64v-32h-64z"/></svg>
-			<h3 class="warning__headline">You don't have any posts yet!</h3>
-			<div class="warning__text">
-				<p class="warning__description">Once you post something in any folder (section) under the <b>content</b> directory, it will appear here. Only one section (with the most posts) will be displayed on the main page by default.</p>
-				<p class="warning__tip"><b>Tip:</b> You can show as many sections as you like with <b><a href="https://gohugo.io/functions/where/#mainsections"rel="nofollow noopener" target="_blank">mainSections</a></b> config parameter.</p>
-			</div>
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Basic HTML Elements</h1>
+			
+		</header><div class="content post__content clearfix">
+			<p>The main purpose of this article is to make sure that all basic HTML Elements are decorated with CSS so as to not miss any possible elements when creating new themes for Hugo.</p>
+<h2 id="headings">Headings</h2>
+<p>Let's start with all possible headings. The HTML <code>&lt;h1&gt;</code>—<code>&lt;h6&gt;</code> elements represent six levels of section headings. <code>&lt;h1&gt;</code> is the highest section level and <code>&lt;h6&gt;</code> is the lowest.</p>
 		</div>
-	
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/html/" rel="tag">HTML</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/tags/css/" rel="tag">CSS</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/tags/basic-elements/" rel="tag">Basic Elements</a></li>
+	</ul>
+</div>
+		</footer>
+	</article>
 </main>
+
+
 
 
 			</div>

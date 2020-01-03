@@ -13,6 +13,7 @@ features = ["blog", "responsive", "widgets", "rss", "disqus", "wordpress"]
 
 [params]
   mainSections = ["blog", "docs"]
+  saying = "holy root"
 
 [frontmatter]
 date = ["date", "publishDate", "lastmod"]
