@@ -1,24 +1,61 @@
 <!DOCTYPE html>
 <html>
-    {{- partial "head.html" . -}}
-    {{- partial "styles.html" . -}}
-
-   
+{{- partial "head.html" . -}}
 
 
-    <body>
+
+<body>
+
+    <div class="pageContainer">
+
+
+
+
         {{- partial "header.html" . -}}
-        {{- partial "navigator.html" . -}}     
-        {{- partial "leftAside.html" . -}}     
+        {{- partial "navigator.html" . -}}
+        {{- partial "leftAside.html" . -}}
         {{- partial "rightAside.html" . -}}
-     
-       
+
+        <h1>INSIGE baseof!!!!!</h1>
         <main class="pageMain">
-        {{- block "main" . }}{{- end }}
+            {{- block "main" . }}{{end}}
         </main>
 
-        <footer class="pageFooter">Footer</footer>
+
+        {{- partial "footer.html" . -}}
+
        
- 
-    </body>
+
+    </div>
+
+
+    {{ with .Site.Params.debug_mode }}
+    <h3>Site Dump</h3>
+    {{ printf "%#v" $.Site }}
+    {{end}}
+
+    {{ with .Site.Params.debug_mode }}
+    <h3>Permalink Dump</h3>
+    {{ printf "%#v" $.Permalink }}
+    {{ end }}
+   
+
+    {{ with .Site.Params.debug_mode }}git 
+    <h3>Variables (scoped current context)</h3>
+    {{ printf "%#v" . }}
+    {{ end }}
+
+     {{ with .Site.Params.debug_mode }}
+     <h3>Page Loop</h3>
+    {{ range $.Pages }}
+    {{/* The context, ".", is now each one of the pages as it goes through the loop */}}
+    {{ printf "%#v" . }}
+    {{ end }}
+    {{ end }}
+
+
+    
+
+</body>
+
 </html>

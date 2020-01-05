@@ -1,7 +1,12 @@
 {{ define "main" }}
 
-<h2>GridLayout->default->single.html->baseof</h2>
+<h2>about.md->single.html</h2>
 
-{{ .Content }}
+
+
+{{ with .Content }}
+  {{- . -}}
+{{ end }}
+
 
 {{end}}

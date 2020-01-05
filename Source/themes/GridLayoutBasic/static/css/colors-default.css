@@ -1,0 +1,103 @@
+   /* ===========================================================
+        ===  [BEGIN]     COLOR STYLES  
+        =============================================================*/
+        :root {
+         
+            --grid-area-bg-color: linear-gradient(135deg, --darkest-themed-color 0%, --light-themed-color 59%);
+            
+            /* Azure Color Theme */
+            --darkest-themed-color: #00082d;
+            --dark-themed-color: #0B1C51;
+            --medium-themed-color: #6679B6;
+            --light-themed-color: #A8B0C8;
+            --lightest-themed-color: #A8B0C8;
+
+            --darkest-secondary-themed-color: #FBA405;
+            --dark-secondary-themed-color: #FCC913;
+            --medium-secondary-themed-color: #FACF83;
+            --light-secondary-themed-color: #F6E4D2;
+            --lightest-secondary-themed-color: #F6E4D2;
+
+            --black-themed-color: black;
+            --white-themed-color: white;
+
+            /* Color Themes will be either Dark mode or Light mode. */
+            --theme-font-white-color: var(white);
+            --theme-font-medium-color:var(gray);
+            --theme-font-dark-color:darkgray;
+            --theme-font-black-color:(var(--black-themed-color);
+
+
+
+        }
+
+
+        header.pageHeader,
+        nav.pageNav,
+        aside.pageLeftAside,
+        aside.pageRightAside,
+        main.pageMain,
+        footer.pageFooter {
+            background: green;
+            color: rgb(10, 3, 73);
+            border-color: white;
+            color: white;
+
+        }
+
+
+
+
+
+
+
+
+        body {
+            background: var(--darkest-themed-color); 
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: blue;     
+        }
+        p {
+            color:var(--dark-themed-color);   
+            line-height: 2em;
+        }
+
+        main.pageMain { 
+            background-color: orange
+            color: black;
+
+        }
+
+
+
+        header.pageHeader {
+         background-color: red;   
+        }
+
+        nav.pageNav {
+            background-color: var(--dark-themed-color);
+        }
+
+        aside.pageLeftAside {
+            background-color: black;
+            background: black;
+        }
+
+        aside.pageRightAside {
+            background-color: var(--dark-themed-color);
+        }
+
+        main.pageMain {
+            background-color: var(--light-themed-color);
+        }
+
+        footer.pageFooter {
+            grid-area: footer;
+        }
+
+    
+
+
+        /* ===========================================================
+        ===  [END]    COLOR STYLES  
+        =============================================================*/

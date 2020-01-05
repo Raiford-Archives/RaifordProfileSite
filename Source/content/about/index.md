@@ -1,8 +1,7 @@
 ---
 title: "About"
-date: 2014-04-09
-authorbox: false
-sidebar: false
+date: 2020-01-04T02:55:49-06:00
+draft: true
 menu: main
 ---
 

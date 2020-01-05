@@ -2,12 +2,7 @@
 title: Resume
 description: Online resume for Raiford D. Brookshire
 date: "2020-1-1"
-categories:
-  - "Development"
-tags:
-  - "HTML"
-  - "CSS"
-  - "Basic Elements"
+menu: main
 ---
 
 

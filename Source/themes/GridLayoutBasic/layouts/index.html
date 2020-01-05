@@ -1,7 +1,14 @@
 {{ define "main" }}
 
-<h2>GridLayout->index.html->baseof</h2>
+DEbug Dumpb
+{
 
-{{ .Content }}
+{{ with .Site.Params.debug_mode }}
+    <h4>Debug MODE</h4>
+{{ end }}
 
+
+{{ with .Content }}
+  {{- . -}}
+{{ end }}
 {{end}}
