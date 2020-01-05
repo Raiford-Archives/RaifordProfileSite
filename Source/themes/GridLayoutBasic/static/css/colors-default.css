@@ -2,33 +2,49 @@
         ===  [BEGIN]     COLOR STYLES  
         =============================================================*/
         :root {
-         
-            --grid-area-bg-color: linear-gradient(135deg, --darkest-themed-color 0%, --light-themed-color 59%);
             
-            /* Azure Color Theme */
-            --darkest-themed-color: #00082d;
-            --dark-themed-color: #0B1C51;
-            --medium-themed-color: #6679B6;
-            --light-themed-color: #A8B0C8;
-            --lightest-themed-color: #A8B0C8;
+            /* Themed color! is you can use these variable in your site you can 
+                easily 'skin' your site to a new color quickly and easily just by changing these value in a single spot
 
-            --darkest-secondary-themed-color: #FBA405;
-            --dark-secondary-themed-color: #FCC913;
-            --medium-secondary-themed-color: #FACF83;
-            --light-secondary-themed-color: #F6E4D2;
-            --lightest-secondary-themed-color: #F6E4D2;
+                This will eventually go into another file so you can just swap files to change  a theme
+            */
 
-            --black-themed-color: black;
-            --white-themed-color: white;
+            --theme-color-white: white;
+            --theme-color-black: black;
+            --theme-color-gray-light: lightgray;
+            --theme-color-gray-medium: gray;
+            --theme-color-gray-dark: darkgray;
 
-            /* Color Themes will be either Dark mode or Light mode. */
-            --theme-font-white-color: var(white);
-            --theme-font-medium-color:var(gray);
-            --theme-font-dark-color:darkgray;
-            --theme-font-black-color:(var(--black-themed-color);
+            --theme-color-primary-lightest:white;
+            --theme-color-primary-lighter:#A8B0C8;
+            --theme-color-primary-light:#A8B0C8;
+            --theme-color-primary-medium:#6679B6;
+            --theme-color-primary-dark:#0B1C51;
+            --theme-color-primary-darker:#00082d;
+            --theme-color-primary-darkest:#00082d;
+
+            --theme-color-secondary-lightest:#F6E4D2;
+            --theme-color-secondary-lighter:#F6E4D2;
+            --theme-color-secondary-light:#F6E4D2;
+            --theme-color-secondary-medium:#FACF83;
+            --theme-color-secondary-dark:#FCC913;
+            --theme-color-secondary-darker:#FBA405;
+            --theme-color-secondary-darkest:#FBA405;
+
+            --theme-color-gradient-primary-dark:white;
+            --theme-color-gradient-primary-medium:#white;
+            --theme-color-gradient-primary-light:#white;
 
 
 
+            --theme-color-post-font: var(--theme-color-primary-darkest);
+            --theme-color-post-background: var(--theme-color-white);
+
+
+            /* If you add more variable try and use a reasonable 
+            naming convention to make it easy in intellisense
+            */
+            
         }
 
 
@@ -53,46 +69,46 @@
 
 
         body {
-            background: var(--darkest-themed-color); 
+            background: var(--theme-color-post-font); 
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            color: blue;     
+            color: var(--theme-color-post-font);     
         }
         p {
-            color:var(--dark-themed-color);   
+            color:var(--theme-color-default-font);   
             line-height: 2em;
         }
 
         main.pageMain { 
-            background-color: orange
-            color: black;
+            background: var(--theme-color-post-font); 
+            color: var(--theme-color-post-font);  
 
         }
 
 
 
         header.pageHeader {
-         background-color: red;   
+         background-color: var(theme-color-white);   
         }
 
         nav.pageNav {
-            background-color: var(--dark-themed-color);
+            background-color: var(theme-color-white);
         }
 
         aside.pageLeftAside {
-            background-color: black;
+            background-color: var(--theme-color-primary-medium);
             background: black;
         }
 
         aside.pageRightAside {
-            background-color: var(--dark-themed-color);
+            background-color: var(--theme-color-primary-medium);
         }
 
         main.pageMain {
-            background-color: var(--light-themed-color);
+            background-color: var(--theme-color-primary-lighest);
         }
 
         footer.pageFooter {
-            grid-area: footer;
+            background-color: var(--theme-color-primary-dark);
         }
 
     
